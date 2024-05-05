@@ -98,6 +98,7 @@ nav ul li a:hover {
     flex-wrap: wrap;
     padding-top: 100px;
     margin: 0 auto;
+    padding: 0;
     width: 100%;
     max-width: 100%;
 }
@@ -279,7 +280,7 @@ footer button:hover {
 
 @media (max-width: 768px) {
     body {
-        padding: 10px;
+        padding: 0;
     }
 
     .menu-hamburger {
