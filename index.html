@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/x-icon" href="assets/icons/tonyeth.svg">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="/assets/js/script.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("ScyjE1eYaPsCYSzW2");
+        })();
+    </script>
+    
+    <!-- Meta Tag Open Graph (Facebook, LinkedIn, WhatsApp) -->
+    <meta property="og:title" content="Welcome to Tony's World"/>
+    <meta property="og:description" content="Explore the future of innovation with Ethereum."/>
+    <meta property="og:image" content="https://tuodominio.com/assets/img/ethfront.png"/>
+    <meta property="og:url" content="https://tuodominio.com/index.html"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:site_name" content="Tony's World"/>
+    <meta property="og:locale" content="en_US"/>
+
+    <!-- Meta Tag Twitter -->
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:title" content="Welcome to Tony's World"/>
+    <meta name="twitter:description" content="Explore the future of innovation with Ethereum."/>
+    <meta name="twitter:image" content="https://tuodominio.com/assets/img/ethfront.png"/>
+    <meta name="twitter:url" content="https://tuodominio.com/index.html"/>
+
+    <!-- Meta Tag Google -->
+    <meta itemprop="name" content="Welcome to Tony's World"/>
+    <meta itemprop="description" content="Explore the future of innovation with Ethereum."/>
+    <meta itemprop="image" content="https://tuodominio.com/assets/img/ethfront.png"/>
+
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <img src="/assets/img/logo-scritta.png" alt="Logo" class="logo">
+            <div class="menu-hamburger">☰</div>
+
+        </div>
+        
+        <nav class="menu-hidden">
+            <ul>
+                <li><a href="about.html">About me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="background-image-section">
+        <img src="assets/img/ethfront.png" alt="Background" class="responsive-background">
+        <div class="cta-container">
+            <h1>Welcome to Tony's World</h1>
+            <p>Explore the future of innovation with Ethereum.</p>
+            
+            <!-- Pulsante per la Condivisione -->
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://tuodominio.com/index.html" target="_blank" rel="noopener noreferrer">
+                <button class="cta-button">Share on Facebook</button>
+            </a>
+            <a href="https://twitter.com/intent/tweet?url=https://tuodominio.com/index.html&text=Welcome%20to%20Tony's%20World" target="_blank" rel="noopener noreferrer">
+                <button class="cta-button">Share on Twitter</button>
+            </a>
+        </div>
+    </section>
+
+    <h3>How can I use this technology for my Business?</h3>
+
+    <section class="cards-section">
+        <div class="card">
+            <img src="assets/img/image1.png" alt="Image 1">
+            <p>Smart contracts developed in Solidity provide businesses with a method to automate transactions...</p>
+        </div>
+        <div class="card">
+            <img src="assets/img/image2.jpg" alt="Image 2">
+            <p>In the rapidly evolving landscape of Web3, having a consultant who is adept at navigating its intricacies is crucial...</p>
+        </div>
+        <div class="card">
+            <img src="assets/img/image3.jpg" alt="Image 3">
+            <p>Blockchain technology is becoming crucial for businesses...</p>
+        </div>
+    </section>
+
+    <footer>
+        <h2>Would you like to receive some news? Submit here!</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="name" required />
+            <input type="text" id="profession" placeholder="profession" required />
+            <input type="text" id="industry" placeholder="industry" required />
+            <input type="email" id="email" placeholder="email" required />
+            <textarea id="message" placeholder="message" required></textarea>
+            <button onclick="SendMail()" type="button">SUBMIT</button>
+        </form>
+    </footer>
+</body>
+</html>

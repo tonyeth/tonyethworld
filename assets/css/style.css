@@ -1,0 +1,269 @@
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #ffffff;
+}
+
+.navbar {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.logo {
+    height: 50px;
+}
+
+.menu-hamburger {
+    cursor: pointer;
+    font-size: 24px;
+    color: #005a87;
+    display: block; 
+    position: relative;
+    z-index: 1501;
+}
+
+.menu-hidden {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    position: fixed; 
+    top: 59px;
+    left: 0;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 1500;
+}
+
+.menu-hidden.visibile {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    font-size: 80%
+}
+
+nav ul li a:hover {
+    color: #cccccc;
+}
+
+
+.content-section, .cards-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 100px; 
+    flex-wrap: wrap;
+}
+
+
+.background-image-section {
+    position: relative;
+    text-align: center;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    padding: 0; 
+    margin: 0; 
+}
+
+.responsive-background {
+    width: 100%; 
+    height: 100%; 
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1; 
+    object-fit: cover; 
+}
+h3 {
+    font-family: 'Arial', sans-serif; 
+    font-size: 30px; 
+    color: #3498db; 
+    text-align: center; 
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    text-shadow: 3px 3px 0px rgba(0,0,0,0.2); 
+    padding: 20px;
+    background: linear-gradient(45deg, #122b3d, #0e515d); 
+    border-radius: 10px; 
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3); 
+    margin: 20px auto; 
+    width: fit-content; 
+    max-width: 90%; 
+    overflow: hidden; 
+    margin-top: 50px;
+}
+
+.cta-container {
+    position: relative; 
+    z-index: 10; 
+    padding: 30px;
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.5); 
+    margin-top: 40px;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: #005a87;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #003f5c;
+}
+
+.cards-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 20px 0;
+    box-sizing: border-box;  
+    width: 100%; 
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    width: calc(33.333% - 20px); 
+    margin: 10px;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%; 
+    height: auto;
+}
+
+.card p {
+    padding: 15px; 
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .cards-section {
+        flex-direction: column; 
+    }
+
+    .card {
+        width: 100%; 
+        margin: 10px 0; 
+    }
+}
+
+
+
+
+
+footer {
+    background: linear-gradient(45deg, #122b3d, #0e515d);
+    color: white;
+    text-align: center;
+   
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+footer form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+footer input, footer textarea {
+    width: 90%;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer textarea {
+    height: 100px;
+    resize: none;
+}
+
+footer button {
+    padding: 10px 20px;
+    background-color: white;
+    color: #004466;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.5s;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+footer button:hover {
+    background-color: #004466;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .menu-hamburger {
+        display: block;
+    }
+
+    .card {
+        width: 90%; 
+    }
+}
