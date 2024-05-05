@@ -1,7 +1,7 @@
 body {
     overflow-x: hidden;
     margin: 0;
-    padding: 20px;
+    padding: 0px;
     font-family:Arial, Helvetica, sans-serif;
     line-height: 1.6;
     color: #333;
@@ -239,7 +239,6 @@ p {display: flex;
         background: linear-gradient(45deg, #122b3d, #0e515d);
         color: white;
         text-align: center;
-       
         position: relative;
         bottom: 0;
         left: 0;
@@ -253,6 +252,7 @@ p {display: flex;
         align-items: center;
         width: 100%;
         margin: 0 auto;
+        padding: 0;
     }
     
     footer input, footer textarea {
@@ -286,3 +286,10 @@ p {display: flex;
     footer button:hover {
         background-color: #004466;
     }
+    
+    @media (max-width: 768px) {
+        footer form {
+            width: 90%;
+        }
+    }
+    
