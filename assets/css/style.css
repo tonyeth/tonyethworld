@@ -26,6 +26,7 @@ body {
     right: 0;
     z-index: 1000;
     width: 100%;
+    max-width: 100%;
 }
 
 .logo {
@@ -46,6 +47,7 @@ body {
     flex-direction: column;
     background-color: #fff;
     width: 100%;
+    max-width: 100%;
     position: fixed;
     top: 59px;
     left: 0;
@@ -70,6 +72,7 @@ nav ul {
     margin: 0;
     justify-content: flex-end;
     width: 100%;
+    max-width: 100%;
 }
 
 nav ul li {
@@ -118,7 +121,6 @@ nav ul li a:hover {
     top: 0;
     z-index: -1;
     object-fit: cover;
-   
 }
 
 h3 {
@@ -149,6 +151,7 @@ h3 {
     margin-top: 40px;
     width: 90%;
     margin: 0 auto;
+    max-width: 100%;
 }
 
 .cta-button {
