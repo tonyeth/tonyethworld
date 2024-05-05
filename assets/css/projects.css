@@ -7,7 +7,6 @@ body {
     color: #333;
     background-color: #ffffff;
 }
-
 .navbar {
     background-color: #fff;
     display: flex;
@@ -55,15 +54,8 @@ body {
     transform: translateY(0);
     opacity: 1;
     visibility: visible;
-}body {
-    overflow-x: hidden;
-    margin: 0;
-    padding: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #ffffff;
 }
+
 
 .navbar {
     background-color: #fff;
