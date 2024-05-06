@@ -19,7 +19,6 @@ document.addEventListener('DOMContentLoaded', function() {
         event.stopPropagation();
     });
 });
-
 function SendMail() {
     var params = {
         from_name: document.getElementById("name").value,
@@ -37,3 +36,7 @@ function SendMail() {
         alert("Failed to send email: " + error.text);
     });
 }
+(function(){
+    emailjs.init("ScyjE1eYaPsCYSzW2");
+})();
+
