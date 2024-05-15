@@ -20,6 +20,9 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 function SendMail() {
+
+   
+
     var params = {
         from_name: document.getElementById("name").value,
         email: document.getElementById("email").value,
@@ -27,6 +30,11 @@ function SendMail() {
         industry: document.getElementById("industry").value,
         message: document.getElementById("message").value
     };
+    
+    if (!name || !email || !profession || !industry || !message) {
+        alert("Please fill in all the required fields before submitting.");
+        return; 
+    }
 
     emailjs.send("service_dvn88zd", "template_lkolvrw", params)
     .then(function(response) {
