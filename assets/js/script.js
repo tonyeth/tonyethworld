@@ -24,14 +24,14 @@ function SendMail() {
    
 
     var params = {
-        from_name: document.getElementById("name").value,
+        name: document.getElementById("from_name").value,
         email: document.getElementById("email").value,
         profession: document.getElementById("profession").value,
         industry: document.getElementById("industry").value,
         message: document.getElementById("message").value
     };
     
-    if (!name || !email || !profession || !industry || !message) {
+    if (!from_name || !email || !profession || !industry || !message) {
         alert("Please fill in all the required fields before submitting.");
         return; 
     }
